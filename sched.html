@@ -1,0 +1,275 @@
+<html>
+<body style="background-color: #FFFFFF;" onmouseover="update()">
+
+<head><title>Scouting 2015</title>
+<!-- css styling -->
+<link href="style.css" rel="stylesheet" />
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+
+<!-- tooltip test -->
+
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( document ).tooltip();
+  });
+  </script>
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>
+
+<!-- end of tooltip -->
+
+
+<!-- Favicon -->
+<link rel="icon"  href="favicon.ico" />
+
+
+
+</head>
+
+<center>
+<h2> Scouting Schedule</h2>
+<table class="table table-hover sortable" style="width: 50%; border: 1px">
+	<tr>
+		<td>
+			Start Match
+		</td>
+		<td>
+			End Match
+		</td>
+		<td>
+			Red 1
+		</td>
+		<td>
+			Red 2
+		</td>
+		<td>
+			Red 3
+		</td>
+		<td>
+			Blue 1
+		</td>
+		<td>
+			Blue 2
+		</td>
+		<td>
+			Blue 3
+		</td>
+	</tr>
+	<tr>
+		<td>
+			1
+		</td>
+		<td>
+			15
+		</td>
+		<td>
+			Eric
+		</td>
+		<td>
+			Baillie
+		</td>
+		<td>
+			Luke
+		</td>
+		<td>
+			Maribel 
+		</td>
+		<td>
+			Ally
+		</td>
+		<td>
+			David E
+		</td>
+	</tr>
+	<tr>
+		<td>
+			16
+		</td>
+		<td>
+			30
+		</td>
+		<td>
+			Christina
+		</td>
+		<td>
+			Dan
+		</td>
+		<td>
+			Starbuck
+		</td>
+		<td>
+			Ryder 
+		</td>
+		<td>
+			Danielle
+		</td>
+		<td>
+			Brian
+		</td>
+	</tr>
+	<tr>
+		<td>
+			31
+		</td>
+		<td>
+			45
+		</td>
+		<td>
+			Eric
+		</td>
+		<td>
+			Baillie
+		</td>
+		<td>
+			Luke
+		</td>
+		<td>
+			Maribel 
+		</td>
+		<td>
+			Ally
+		</td>
+		<td>
+			David E
+		</td>
+	</tr>
+	<tr>
+		<td>
+			46
+		</td>
+		<td>
+			60
+		</td>
+		<td>
+			Christina
+		</td>
+		<td>
+			Dan
+		</td>
+		<td>
+			Starbuck
+		</td>
+		<td>
+			Ryder 
+		</td>
+		<td>
+			Danielle
+		</td>
+		<td>
+			Brian
+		</td>
+	</tr>
+	<tr>
+		<td>
+			61
+		</td>
+		<td>
+			75
+		</td>
+		<td>
+			Eric
+		</td>
+		<td>
+			Baillie
+		</td>
+		<td>
+			Luke
+		</td>
+		<td>
+			Maribel 
+		</td>
+		<td>
+			Ally
+		</td>
+		<td>
+			David E
+		</td>
+	</tr>
+	<tr>
+		<td>
+			76
+		</td>
+		<td>
+			90
+		</td>
+		<td>
+			Christina
+		</td>
+		<td>
+			Dan
+		</td>
+		<td>
+			Starbuck
+		</td>
+		<td>
+			Ryder 
+		</td>
+		<td>
+			Danielle
+		</td>
+		<td>
+			Brian
+		</td>
+	</tr>
+<table>
+
+<br>
+<br>
+
+<script>
+function rank()
+{
+	document.getElementById("search").value = 'rank';
+	document.forms["searchform"].submit();
+}
+
+function search2()
+{
+	document.getElementById("search").value = 'searchpage';
+	document.forms["searchform"].submit();
+}
+
+</script>
+</form>
+
+
+<center>
+<a href="#" onclick="search2()" class="btn btn-primary btn-sm">Search</a>
+<a href="#" onclick="rank()" class="btn btn-primary btn-sm">Rank</a>
+<a href="index.html" class="btn btn-primary btn-sm">Match</a>
+<a href="#" onclick="upload2()" class="btn btn-primary btn-sm">Upload</a>
+</center>
+
+<br><br>
+
+<script>
+function search2()
+{
+	document.getElementById("search").value = 'search';
+	document.forms["searchform"].submit();
+}
+
+function upload2()
+{
+	document.getElementById("search").value = 'upload';
+	document.forms["searchform"].submit();
+}
+
+</script>
+
+
+
+
+</body>
+</html>

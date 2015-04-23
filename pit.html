@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Pit Scouting 2015</title>
+
+
+<!-- css styling -->
+<link href="style.css" rel="stylesheet" />
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+</head>
+<body style="background-color: #FFFFFF;">
+
+<form method="post" action="form.php">
+
+
+<center>
+	<table style="width:50%">
+		<tr>
+			
+			<td style="width:30%">
+				<input type="text" name="match" autocomplete="off" id="matchid" class="form-control" hidden value="PIT" style="display: none;" />
+				<label for="teamid" class="col-lg-2 control-label">Team:</label>  <input type="number" name="team" autocomplete="off" id="teamid" class="form-control" />
+			</td>
+			<td style="width:30%">
+				<label for="teamnid" class="col-lg-2 control-label">Name:</label>  <input type="text" name="name" autocomplete="off" id="teamnid" class="form-control" />
+			</td>
+			<td style="width:10%">
+				<br />
+				<input type="submit" value="Submit" style="font-size: 18px;" onclick="submit()" class="btn btn-success btn-xs" id="submit" />
+			</td>
+		</tr>
+	</table>
+</center>
+<br>
+<br>
+
+<center>
+<table style="width:70%;">
+	<tr>
+		<td style="width: 20%">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="drive" class="col-lg-2 control-label">Drivetrain:</label>
+				<select id="drive" name="drive" class="form-control">
+					<option value="wc">West Coast</option>
+					<option value="swerve">Swerve</option>
+					<option value="h">H Drive</option>
+					<option value="kop">KOP</option>
+					<option value="mec">Mecanum</option>
+				</select>
+			</center>
+		</td>
+		<td style="width: 10%;">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="lift" class="col-lg-2 control-label">Lift:</label>
+				<select id="lift" name="lift" class="form-control">
+					<option value="up">Upstack</option>
+					<option value="down">Downstack</option>
+					<option value="hook">Hooks</option>
+				</select>
+			</center>
+		</td>
+		<td style="width: 20%">
+		</td>
+	</tr>
+	<tr><td><br><br><br></td><td></td><td></td><td></td><td></td></tr>
+	<tr>
+		<td style="width: 20%">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="auto1" class="col-lg-2 control-label">Auto 1:</label>  <input type="text" name="auto1" autocomplete="off" id="auto1" class="form-control" />
+				<label for="auto2" class="col-lg-2 control-label">2:</label>  <input type="text" name="auto2" autocomplete="off" id="auto2" class="form-control" />
+				<label for="auto3" class="col-lg-2 control-label">3:</label>  <input type="text" name="auto3" autocomplete="off" id="auto3" class="form-control" />
+				<label for="auto4" class="col-lg-2 control-label">4:</label>  <input type="text" name="auto4" autocomplete="off" id="auto4" class="form-control" />
+				<label for="auto5" class="col-lg-2 control-label">5:</label>  <input type="text" name="auto5" autocomplete="off" id="auto5" class="form-control" />
+			</center>
+		</td>
+		<td style="width: 10%;">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="tele1" class="col-lg-2 control-label">Tele 1:</label>  <input type="text" name="tele1" autocomplete="off" id="tele1" class="form-control" />
+				<label for="tele2" class="col-lg-2 control-label">2:</label>  <input type="text" name="tele2" autocomplete="off" id="tele2" class="form-control" />
+				<label for="tele3" class="col-lg-2 control-label">3:</label>  <input type="text" name="tele3" autocomplete="off" id="tele3" class="form-control" />
+				<label for="tele4" class="col-lg-2 control-label">4:</label>  <input type="text" name="tele4" autocomplete="off" id="tele4" class="form-control" />
+				<label for="tele5" class="col-lg-2 control-label">5:</label>  <input type="text" name="tele5" autocomplete="off" id="tele5" class="form-control" />
+			</center>
+		</td>
+		<td style="width: 20%">
+		</td>
+	</tr>
+	<tr><td><br><br><br></td><td></td><td></td><td></td><td></td></tr>
+	<tr>
+		<td style="width: 20%">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="auto_note" class="col-lg-2 control-label">Auto Notes:</label><textarea class="form-control"  id="auto_note" name="auto_note" style="width: 100%;"></textarea>
+			</center>
+		</td>
+		<td style="width: 10%;">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="tele_note" class="col-lg-2 control-label">Tele Notes:</label><textarea class="form-control"  id="tele_note" name="tele_note" style="width: 100%;"></textarea>
+			</center>
+		</td>
+		<td style="width: 20%">
+		</td>
+	</tr>
+	<tr><td><br><br><br></td><td></td><td></td><td></td><td></td></tr>
+	<tr>
+		<td style="width: 20%">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="driveh" class="col-lg-2 control-label">Practice:</label>  <input type="number" name="driveh" autocomplete="off" id="driveh" class="form-control" />
+			</center>
+		</td>
+		<td style="width: 10%;">
+		</td>
+		<td style="display: 25%">
+			<center>
+				<label for="code" class="col-lg-2 control-label">Code:</label>
+				<select id="code" name="code" class="form-control">
+					<option value="cpp">C++</option>
+					<option value="java">Java</option>
+					<option value="labview">Labview</option>
+				</select>
+			</center>
+		</td>
+		<td style="width: 20%">
+		</td>
+	</tr>
+
+
+</table>
+</form>
+<br><br><br>
+
+
+<!-- posting form --> 
+<form method="post" action="view.php" id="searchform">
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-default" style="height:5%; display: none;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Pwnage</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Match Scouting <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" onclick="rank()">Ranks</a></li>
+      </ul>
+        <div class="form-group">
+          <input type="search" class="form-control" placeholder="Search" name="search" id="search" style="width: 40%; height: 100%;">
+        </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+function rank()
+{
+	document.getElementById("search").value = 'rank';
+	document.forms["searchform"].submit();
+}
+
+function search2()
+{
+	document.getElementById("search").value = 'searchpage';
+	document.forms["searchform"].submit();
+}
+
+</script>
+</form>
+
+
+<center>
+<a href="#" onclick="search2()" class="btn btn-primary btn-sm">Search</a>
+<a href="#" onclick="rank()" class="btn btn-primary btn-sm">Rank</a>
+<a href="sched.html" class="btn btn-primary btn-sm">Schedule</a>
+<a href="#" onclick="upload2()" class="btn btn-primary btn-sm">Upload</a>
+</center>
+
+<br><br>
+
+<script>
+function search2()
+{
+	document.getElementById("search").value = 'search';
+	document.forms["searchform"].submit();
+}
+
+function upload2()
+{
+	document.getElementById("search").value = 'upload';
+	document.forms["searchform"].submit();
+}
+
+</script>
+
+
+</center>
+
+
+
+</body>
+</html>
